@@ -1,0 +1,47 @@
+[
+  {
+    "id": "learner_ava",
+    "goal": "Build a small agent-evaluation research project",
+    "experience": ["basic Python", "introductory machine learning"],
+    "concepts_completed": [],
+    "learning_preferences": {
+      "explanation_style": "step-by-step",
+      "practice_style": "small coding exercises"
+    },
+    "memory_consent": {
+      "save_learning_preferences": true,
+      "save_progress": true,
+      "save_sensitive_information": false
+    }
+  },
+  {
+    "id": "learner_mika",
+    "goal": "Understand agent guardrails before designing a benchmark",
+    "experience": ["Python", "software testing", "Git"],
+    "concepts_completed": ["basic LLM prompting"],
+    "learning_preferences": {
+      "explanation_style": "concept-first",
+      "practice_style": "inspect examples, then modify code"
+    },
+    "memory_consent": {
+      "save_learning_preferences": true,
+      "save_progress": false,
+      "save_sensitive_information": false
+    }
+  },
+  {
+    "id": "learner_sam",
+    "goal": "Learn persona building and user modeling for a research portfolio",
+    "experience": ["introductory programming"],
+    "concepts_completed": [],
+    "learning_preferences": {
+      "explanation_style": "plain-language examples",
+      "practice_style": "guided templates"
+    },
+    "memory_consent": {
+      "save_learning_preferences": false,
+      "save_progress": true,
+      "save_sensitive_information": false
+    }
+  }
+]

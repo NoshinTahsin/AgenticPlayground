@@ -1,8 +1,0 @@
-[project]
-name = "colabguard"
-version = "0.1.0"
-description = "Hands-on benchmark and learning lab for guarded AI agents"
-requires-python = ">=3.11"
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResearchReady Learner Persona",
+  "description": "A minimal, learner-controlled profile for adapting educational content. It must not be used for hiring decisions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "goal",
+    "experience",
+    "concepts_completed",
+    "learning_preferences",
+    "memory_consent"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^learner_[a-z0-9_]+$"
+    },
+    "goal": {
+      "type": "string",
+      "description": "A self-reported learning goal."
+    },
+    "experience": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "concepts_completed": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "learning_preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["explanation_style", "practice_style"],
+      "properties": {
+        "explanation_style": { "type": "string" },
+        "practice_style": { "type": "string" }
+      }
+    },
+    "memory_consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "save_learning_preferences",
+        "save_progress",
+        "save_sensitive_information"
+      ],
+      "properties": {
+        "save_learning_preferences": { "type": "boolean" },
+        "save_progress": { "type": "boolean" },
+        "save_sensitive_information": {
+          "const": false,
+          "description": "Sensitive information is never stored in this learning project."
+        }
+      }
+    }
+  }
+}
