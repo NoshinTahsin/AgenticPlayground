@@ -1,0 +1,7 @@
+{
+  "id": "intro-add-drop-001",
+  "title": "Add/drop deadline",
+  "user_request": "Can I still add or drop a course this week?",
+  "trusted_policy": "Fictional Northstar University policy: students may add or drop courses in the student portal until Friday at 5:00 PM local time.",
+  "expected_outcome": "State the Friday 5:00 PM deadline and direct the user to the student portal."
+}
